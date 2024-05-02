@@ -71,7 +71,7 @@
             const id = urlParams.get('id');
             $.ajax({
                 type: "GET",
-                url: `http://localhost:3000/pages/${id}`,
+                url: `<%= backendurl %>/pages/${id}`,
                 success: function(response){
                     console.log(response);
                     if (response.page != null) { 

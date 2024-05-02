@@ -70,7 +70,8 @@
             //send ajax get request json
             $.ajax({
                 type: "GET",
-                url: "http://localhost:3000/pages/allpages",
+                // url: "http://localhost:3000/pages/allpages",
+                url: "<%= backendurl %>/pages/allpages",
                 success: function(response){
                     console.log(response);
                     for (page of response.pages) {
